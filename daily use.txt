@@ -1,0 +1,6 @@
+Task,Command
+Check Status,git status
+Save & Push,"git add .  git commit -m ""my_update_message""  git push"
+Get Latest (Pull),git pull origin main
+Undo Last Commit,git reset --soft HEAD~1 (Keeps your work)
+Discard All Changes,git reset --hard HEAD (Careful: Deletes unsaved work)

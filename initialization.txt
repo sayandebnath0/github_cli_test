@@ -1,0 +1,23 @@
+# 1. Move into your project folder
+cd /path/to/your_repo_name
+
+# 2. Start Git
+git init -b main
+
+# 3. Create a .gitignore file (Choose the one you need below)
+# For Godot:
+echo ".godot/
+.import/
+export_presets.cfg" > .gitignore
+
+# OR For Go:
+echo "bin/
+*.exe
+go.sum" > .gitignore
+
+# 4. Save your files locally
+git add .
+git commit -m "first_commit_message"
+
+# 5. Create on GitHub and push
+gh repo create your_repo_name --private --source=. --remote=origin --push
